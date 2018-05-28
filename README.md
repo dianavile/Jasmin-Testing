@@ -21,7 +21,8 @@ describe("Player", function() {
 - They are used to __ORGANIZE information__.
 
 #### Specs 
-- `It` = used to create a __specification(SPEC)__. A `spec` = a _container_ for a __test__, to identify the exact feature to test.
+- `It` = used to create a __specification(SPEC)__. 
+- A `spec` = a _container_ for a __test__, to identify the exact feature to test.
 -  `Spec passes`=__If all exceptations(spec) within a spec return "TRUE"__.
 -  `Spec fails`=__If any of the exceptations(spec) within a spec returns "FALSE"__.
 - `It`= to define the _boundry to its test._
