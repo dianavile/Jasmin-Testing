@@ -59,6 +59,14 @@ describe("Player", function() {
 - This spec would `fail` because our second test is returning `false`.
 
 ## Getting Started with Red-Green-Refactor
+- Write your test first.
+- They all fail, since there is no code to make them pass.
+- Then you go write your code to make your test pass.
+- Once that is complete, you can safely refactor your code, as you continue to add new features.
+
+
+
+
 
 
 
