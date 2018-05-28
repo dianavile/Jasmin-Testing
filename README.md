@@ -3,8 +3,6 @@
 - Therefore the _popular, easy to use_ [Jasmine Library](https://jasmine.github.io/)(version 2.2) is needed.
 - The way to organize a test is up to you and your preferences. No right or wrong way.
 
-[Jasmin Test](https://dianavile.github.io/Jasmine-Testing/)
-
 ## Jasmine Syntax:
 - 1) `Describe()` calls = colored __black__
 _describe()_ calls are black, they are used to identify a suite which is a group of related specs.
