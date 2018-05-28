@@ -1,10 +1,7 @@
-# Jasmine-Testing
-Jasmine Testing (Lesson 22)
+## Jasmine-Testing (Lesson 22)
+- Javascript doesn´t have `unix test` functions by default. Therefore the [Jasmine Library](https://jasmine.github.io/)(version 2.2) is needed. It is a popular, easy to use library.
 
-- Javascript doesn´t have `unix test` functions by default. 
-- Therefore the [Jasmine Library](https://jasmine.github.io/) (version 2.2) is needed.
-- It is a popular, easy to use library.
-
+## Jasmine Syntax
 - 1) `Describe()` calls = colored __black__
 ```
 describe("Player", function() {
@@ -17,6 +14,9 @@ describe("Player", function() {
     player.play(song);
     expect(player.currentlyPlayingSong).toEqual(song);
 ```
+### Introducing Suites and Specs
+
+
 
 
 
