@@ -21,7 +21,7 @@ _it()_ calls are green, they are used to identify a **spec**ification
     expect(player.currentlyPlayingSong).toEqual(song);
 ```
 ## Organize a test: Introducing Specs and Suites
-- `Describe` and `It` are used to create an __outline__ to __ORGANIZE information__.
+`Describe` and `It` are used to create an __outline__ to __ORGANIZE information__.
 
 ### Specs 
 - `It` = used to create a __specification(SPEC)__. 
@@ -94,7 +94,6 @@ describe('Address Book', function() {
 			expect(adressBook.getContact(0)).toBe(thisContact);
 	}); 
 });
-
 ```
 ## Writing our Implementation
 - raise exceptions: 1 spec, 1 failure
@@ -110,6 +109,7 @@ __In what file would i write my implementation?__
  - Name it `AddressBook.js` since that's the most accurate name for the functionality contained within.
 
 ## Another Spec
+
 
 
 
