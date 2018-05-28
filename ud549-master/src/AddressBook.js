@@ -9,3 +9,7 @@ function AddressBook () {
 	AddressBook.prototype.getContact = function (index) {
 		this.contacts[index];
 }
+
+	AddressBook.prototype.deleteContact = function (index) {
+		this.contacts.splice(index, 1);
+}	
