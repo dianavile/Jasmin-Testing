@@ -41,7 +41,7 @@ describe("Player", function() {
 - (4) The __expected value__ what you expect the process function with the comparision methd to `return`.
 
 `expect(add(0.1, 0.2)).toBe(0.3);`
-- = `(add(0.1, 0.2)) === (0.3);`
+= `(add(0.1, 0.2)) === (0.3);` IF THIS EXPRESSION RETURNS TRUE= THE TEST PASSES.
 
 
 
