@@ -110,6 +110,60 @@ __In what file would i write my implementation?__
 
 ## Another Spec
 
+## Async JavaScript Testing
+- Since JavaScript is the language of the web, there are some functions that by necessity are going to take a decent amount of time to complete, such as fetching data from a server to display on your site. 
+- For this reason, JavaScript includes support for 
+- `asynchronous functions` = _functions that can happen in the background while the rest of your code executes._
+
+### Callbacks
+- This was most commonly handled with `callbacks`. This is still used a lot in certain circumstances.
+- A `callback` function() = _a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action._[Callback function- MDN](https://developer.mozilla.org/en-US/docs/Glossary/Callback_function)
+
+- `Callbacks`= functions that get passed into other functions. 
+For example:
+```
+myDiv.addEventListener("click", function(){
+  // do something!
+})
+```
+- The __function__ `addEventListener()` takes a __callback__ `the “do something” function)` and __calls it when__ `myDiv` gets clicked.
+
+- Unfortunately, though they are useful in situations like the above example, using callbacks can get out of hand, especially when you need to chain several of them together in a specific order. 
+
+#### Resources Callback
+- [Callback-Hell](http://callbackhell.com/)
+- [Article](https://github.com/maxogden/art-of-node#callbacks)
+- [Video](https://www.youtube.com/watch?v=QRq2zMHlBz4)
+
+### Promises
+- A `promise`= an _object that might produce a value at some point in the future._ 
+
+Example:
+- getData() is a function that fetches some data from a server 
+- And returns it as an object that we can use in our code:
+```
+const getData = function() {
+  // go fetch data from some API...
+  // clean it up a bit and return it as an object:
+  return data
+}
+``` 
+__NOTE:__ The issue with this example = it  __takes time to fetch the data__, but unless we tell our code that, it assumes that everything in the function happens essentially instantly. 
+So, this will give a problem, because when we try to extract pieceOfData out of the returned data, the function getData() will most likely still be fetching, so myData will not be the expected data, but will be __undefined__:
+```
+const myData = getData()
+const pieceOfData = myData['whatever']
+```
+To solve this problem:
+- tell the code to wait until the data is done fetching to continue. 
+- This can be done with `Promises`. It allows you to do this:
+```
+const myData = getData() // if this is refactored to return a Promise...
+
+myData.then(function(data){ // .then() tells it to wait until the promise is resolved
+  const pieceOfData = data['whatever'] // and THEN run the function inside
+})
+```
 
 
 
