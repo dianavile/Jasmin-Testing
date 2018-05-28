@@ -5,12 +5,16 @@
 
 ## Jasmine Syntax:
 - 1) `Describe()` calls = colored __black__
+_describe()_ calls are black, they are used to identify a suite which is a group of related specs.
 ```
 describe("Player", function() {
   var player;
   var song;
 ```
 - 2) `It()` calls= colored _green!_
+_it()_ calls are green, they are used to identify a **spec**ification
+                        just a container for a test
+                        _if all expectations within a spec are **true**, then that spec passes, else it will **fail**_
 ```
   it(´should be able to play a Song´, function() {
     player.play(song);
@@ -34,21 +38,27 @@ describe("Player", function() {
 - It is a level of `indentation`.
 
 ## Write a test:
+Start with _a call to expect_ - **expect()**
+Follow a comparison method / _matcher_ - **toBe()** or **not.toBe()**
+
 `expect(add(0.1, 0.2)).toBe(0.3);`
+
 - (1) The __launching point__ of any test to _start the test process_: each test start with a call to `expect`. 
 - (2) The __process function__ excepts a _single value_, called the `actual`, to test.
 - (3) The __comparision method__ called the `matcher`, it is chained after the call to expect. 
       Example: `.toBe` = equivalant to "strict=comparison".
 - (4) The __expected value__ what you expect the process function with the comparision methd to `return`.
 
+
 - If this expression returns `true`= Test `passes`:
 `expect(add(0.1, 0.2)).toBe(0.3);`
 = `(add(0.1, 0.2)) === (0.3);` 
 
 - If this expression returns `false`= Test `do NOT pass`. 
-- To negate a test (test expression = `false`)
-= `expect(add(0.1, 0.2)).not.toBe(0.1);`
-
+Or to __negate a test__ (test expression = `false`)
+```
+expect(add(0.1, 0.2)).not.toBe(0.1);
+```
 ## Quiz: Would this spec pass or fail?
 - A spec can contain multiple test, but each test must return `true` for the spec to `pass` the test.
 ```
@@ -58,7 +68,17 @@ describe("Player", function() {
 ```
 - This spec would `fail` because our second test is returning `false`.
 
-## Getting Started with Red-Green-Refactor
+## Error handling - Getting Started with Red-Green-Refactor-cycle
+_**It is important to write your test before you begin to code!**_
+
+```
+function add(x, y) {
+    if (typeof x && typeof y !== 'number') {
+        trhow new Error('Param must be a number');
+    }
+    return x + y;
+}
+```
 - Write your test first.
 - They all fail, since there is no code to make them pass.
 - Then you go write your code to make your test pass.
