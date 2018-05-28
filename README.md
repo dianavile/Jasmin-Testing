@@ -4,6 +4,14 @@
 - The way to organize a test is up to you and your preferences. No right or wrong way.
 
 ## Jasmine Syntax:
+- __EXAMPLE CODE:__
+```
+describe("A suite", function() {
+  it("contains spec with an expectation", function() {
+    expect(true).toBe(true);
+  });
+});
+```
 - 1) `Describe()` calls = colored __black__
 _describe()_ calls are black, they are used to identify a suite which is a group of related specs.
 ```
