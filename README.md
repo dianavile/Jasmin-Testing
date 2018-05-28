@@ -164,7 +164,7 @@ myData.then(function(data){ // .then() tells it to wait until the promise is res
   const pieceOfData = data['whatever'] // and THEN run the function inside
 })
 ```
-
+- [Jasmine Documentation](https://jasmine.github.io/2.1/introduction.html)
 
 
 
