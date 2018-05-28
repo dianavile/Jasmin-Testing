@@ -97,7 +97,10 @@ describe('Address Book', function() {
 });
 
 ```
-
+## Writing our Implementation
+- raise exceptions: 1 spec, 1 failure
+- Address Book should be able to add a contact
+- __Error:__ Address Book is not defined
 
 
 
