@@ -21,8 +21,7 @@ _it()_ calls are green, they are used to identify a **spec**ification
     expect(player.currentlyPlayingSong).toEqual(song);
 ```
 ## Organize a test: Introducing Specs and Suites
-- `Describe` and `It` are used to create an __outline__.
-- They are used to __ORGANIZE information__.
+- `Describe` and `It` are used to create an __outline__ to __ORGANIZE information__.
 
 ### Specs 
 - `It` = used to create a __specification(SPEC)__. 
