@@ -84,6 +84,19 @@ function add(x, y) {
 - Then you go write your code to make your test pass.
 - Once that is complete, you can safely refactor your code, as you continue to add new features.
 
+```
+describe('Address Book', function() {
+	it('should be able to add a contact', function() {
+		var addressBook = new AddressBook();
+			thisContact = new Contact();
+
+			addressBook.addContact(thisContact);
+
+			expect(adressBook.getContact(0)).toBe(thisContact);
+	}); 
+});
+
+```
 
 
 
