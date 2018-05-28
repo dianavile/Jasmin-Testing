@@ -103,9 +103,9 @@ describe('Address Book', function() {
 - __Error:__ Address Book is not defined
 
 __In what file would i write my implementation?__
-- [] spec/AddressBookSpec.js
-- [] src/Contact.js
-- [x] src/AddressBook.js
+- [] spec/AddressBookSpec.js = __TEST FILE__
+- [] src/Contact.js          = __implementation of TEST in a ContactSpec.js__
+- [x] src/AddressBook.js     = 
 
  - Write all of our application code within the `src/ directory` 
  - Name it `AddressBook.js` since that's the most accurate name for the functionality contained within.
