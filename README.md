@@ -40,10 +40,14 @@ describe("Player", function() {
 - (3) The __comparision method__ called the `matcher`, it is chained after the call to expect. Example: .toBe = equivalant to "strict=comparison".
 - (4) The __expected value__ what you expect the process function with the comparision methd to `return`.
 
+- If this expression returns `true`= Test `passes`:
 `expect(add(0.1, 0.2)).toBe(0.3);`
 = `(add(0.1, 0.2)) === (0.3);` 
-- If this expression returns `true`= Test `passes`.
-- if this expression returns `false`= Test `do NOT pass`. 
+
+- If this expression returns `false`= Test `do NOT pass`. 
+- To negate a test (test expression = `false`)
+= `expect(add(0.1, 0.2)).not.toBe(0.1);`
+
 
 
 
