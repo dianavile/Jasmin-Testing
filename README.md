@@ -1,8 +1,9 @@
 ## Jasmine-Testing (Lesson 22)
 - Javascript doesn´t have `unix test` functions by default. 
 - Therefore the _popular, easy to use_ [Jasmine Library](https://jasmine.github.io/)(version 2.2) is needed.
+- The way to organize a test is up to you and your preferences. No right or wrong way.
 
-## Jasmine Syntax
+## Jasmine Syntax:
 - 1) `Describe()` calls = colored __black__
 ```
 describe("Player", function() {
@@ -15,7 +16,7 @@ describe("Player", function() {
     player.play(song);
     expect(player.currentlyPlayingSong).toEqual(song);
 ```
-### Introducing Specs and Suites
+### Organize a test: Introducing Specs and Suites
 - `Describe` and `It` are used to create an __outline__.
 - They are used to __ORGANIZE information__.
 
@@ -26,7 +27,17 @@ describe("Player", function() {
 - `It`= to define the _boundry to its test._
 
 #### Suites 
-- `Describe` = used to create a __suite(SUITE)__. 
+- `Describe` = used to identify a __suite(SUITE)__. 
+- a `Suite`= a __group of related specs__.
+- Everything contained within this block of code is related to the Suite (e.g.´Player´).
+- It is a level of `indentation`.
+
+### Write a test:
+- The __launching point__ of any test to _start the test process_: each test start with a call to `expect`. 
+- The __process function__ excepts a _single value_, called the `actual`, to test.
+
+
+
 
 
 
