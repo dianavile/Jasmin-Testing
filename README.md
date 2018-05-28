@@ -34,14 +34,18 @@ describe("Player", function() {
 - It is a level of `indentation`.
 
 ### Write a test:
-`(1)expect((2)add(0.1, 0.2)).(3)toBe((4)0.3);`
+`__(1)__expect(__(_2)__add(0.1, 0.2)).__(3)__toBe(__(4)__0.3);`
 - (1) The __launching point__ of any test to _start the test process_: each test start with a call to `expect`. 
 - (2) The __process function__ excepts a _single value_, called the `actual`, to test.
 - (3) The __comparision method__ called the `matcher`, it is chained after the call to expect. Example: .toBe = equivalant to "strict=comparison".
 - (4) The __expected value__ what you expect the process function with the comparision methd to `return`.
 
 `expect(add(0.1, 0.2)).toBe(0.3);`
-= `(add(0.1, 0.2)) === (0.3);` IF THIS EXPRESSION RETURNS TRUE= THE TEST PASSES.
+= `(add(0.1, 0.2)) === (0.3);` 
+- If this expression returns `true`= Test `passes`.
+- if this expression returns `false`= Test `do NOT pass`. 
+
+
 
 
 
