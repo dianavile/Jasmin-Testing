@@ -16,24 +16,24 @@ describe("Player", function() {
     player.play(song);
     expect(player.currentlyPlayingSong).toEqual(song);
 ```
-### Organize a test: Introducing Specs and Suites
+## Organize a test: Introducing Specs and Suites
 - `Describe` and `It` are used to create an __outline__.
 - They are used to __ORGANIZE information__.
 
-#### Specs 
+### Specs 
 - `It` = used to create a __specification(SPEC)__. 
 - A `spec` = a _container_ for a __test__, to identify the exact feature to test.
 -  `Spec passes`=__If all exceptations(spec) within a spec return "TRUE"__.
 -  `Spec fails`=__If any of the exceptations(spec) within a spec returns "FALSE"__.
 - `It`= to define the _boundry to its test._
 
-#### Suites 
+### Suites 
 - `Describe` = used to identify a __suite(SUITE)__. 
 - a `Suite`= a __group of related specs__.
 - Everything contained within this block of code is related to the Suite (e.g.´Player´).
 - It is a level of `indentation`.
 
-### Write a test:
+## Write a test:
 `expect(add(0.1, 0.2)).toBe(0.3);`
 - (1) The __launching point__ of any test to _start the test process_: each test start with a call to `expect`. 
 - (2) The __process function__ excepts a _single value_, called the `actual`, to test.
@@ -49,7 +49,7 @@ describe("Player", function() {
 - To negate a test (test expression = `false`)
 = `expect(add(0.1, 0.2)).not.toBe(0.1);`
 
-### Quiz: Would this spec pass or fail?
+## Quiz: Would this spec pass or fail?
 - A spec can contain multiple test, but each test must return `true` for the spec to `pass` the test.
 ```
  it(´should consider this spec´.function() {
@@ -58,6 +58,7 @@ describe("Player", function() {
 ```
 - This spec would `fail` because our second test is returning `false`.
 
+## Getting Started with Red-Green-Refactor
 
 
 
