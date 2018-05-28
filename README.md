@@ -12,7 +12,7 @@ describe("Player", function() {
 ```
 - 2) `It()` calls= colored _green!_
 ```
-  it("should be able to play a Song", function() {
+  it(´should be able to play a Song´, function() {
     player.play(song);
     expect(player.currentlyPlayingSong).toEqual(song);
 ```
@@ -34,10 +34,11 @@ describe("Player", function() {
 - It is a level of `indentation`.
 
 ### Write a test:
-`__(1)__expect(__(_2)__add(0.1, 0.2)).__(3)__toBe(__(4)__0.3);`
+`expect(add(0.1, 0.2)).toBe(0.3);`
 - (1) The __launching point__ of any test to _start the test process_: each test start with a call to `expect`. 
 - (2) The __process function__ excepts a _single value_, called the `actual`, to test.
-- (3) The __comparision method__ called the `matcher`, it is chained after the call to expect. Example: .toBe = equivalant to "strict=comparison".
+- (3) The __comparision method__ called the `matcher`, it is chained after the call to expect. 
+      Example: `.toBe` = equivalant to "strict=comparison".
 - (4) The __expected value__ what you expect the process function with the comparision methd to `return`.
 
 - If this expression returns `true`= Test `passes`:
@@ -48,6 +49,14 @@ describe("Player", function() {
 - To negate a test (test expression = `false`)
 = `expect(add(0.1, 0.2)).not.toBe(0.1);`
 
+### Quiz: Would this spec pass or fail?
+- A spec can contain multiple test, but each test must return `true` for the spec to `pass` the test.
+```
+ it(´should consider this spec´.function() {
+    expect(true).toBe(true);
+    expect(false).not.toBe(false); 
+```
+- This spec would `fail` because our second test is returning `false`.
 
 
 
