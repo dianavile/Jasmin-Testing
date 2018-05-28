@@ -6,6 +6,6 @@ function AddressBook () {
 		this.contacts.push(contact);
 }	
 
-AddressBook.prototype.getContact = function (index) {
+	AddressBook.prototype.getContact = function (index) {
 		this.contacts[index];
 }
